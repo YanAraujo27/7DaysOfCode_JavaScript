@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+
+    var nome = prompt("Informe o seu nome.");
+    var idade = prompt(nome + ", informe sua idade.");
+    var linguagem = prompt(nome + ", informe qual linguagem de programação esta estudando no momento.");
+    var qualidade = parseInt(prompt("Você gosta de estudar " + linguagem + " ?" + "Responda com o número 1 para SIM ou 2 para NÃO."));
+
+
+
+    mostra("Olá "+ nome + ", você tem " + idade + " anos e já está aprendendo " + linguagem);
+
+    if (qualidade == 1) {
+
+        mostra("Muito bom! Continue estudando e você terá muito sucesso.");
+
+    } if(qualidade == 2){
+
+        mostra("Ahh que pena... Já pensou em aprender outra linguagem?");
+
+    }
+
+
+</script>
