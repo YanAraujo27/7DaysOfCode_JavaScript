@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var area = parseInt(prompt("Qual área de programação gostaria de seguir? Digite 1 para FRONT-END ou 2 para BACK-END"));
+
+
+
+    if(area === 1 ) {
+
+        var front = parseInt(prompt("Qual framework gostaria de aprende? Digite 1 para React ou 2 para Vue"));
+        if (front === 1) {
+
+            mostra("Vai para cima! Apenas esta começando, existem varios cursos disponiveis na internet para React, depois que sabe vc pode virar programador mobile...");
+
+        } else {
+            mostra("Vai para cima! Apenas esta começando, existem varios cursos disponiveis na internet para Vue...");
+        }
+
+
+    } else if (area === 2) {} {
+
+         var back = parseInt(prompt("Qual linguagem gostaria de aprende? Digite 1 para Java ou 2 para C#"));
+
+        if (back === 1) {
+
+            mostra("Vai para cima! Apenas esta começando, existem varios cursos disponiveis na internet para Java, estude bastante é um pouco dificil no começo, mas arrebente.");
+
+        } else {
+            
+            mostra("Vai para cima! Apenas esta começando, existem varios cursos disponiveis na internet para C#...");
+
+        }
+    } //else{
+
+       //var full = parseInt(prompt("Gostaria de ser full? Digite 1 para SIM ou 2 para NÃO"));
+       //if (full == 1) {
+
+        //mostra("Boa sorte! O caminho é grande, mas não desiste não você é capaz!!!");
+
+        //}else if (full == 2) {
+
+          // mostra("Existem outras áreas do TI que você pode ser indentificar...");
+
+        //}
+    //}
+
+</script>
